@@ -1,0 +1,33 @@
+set clipboard+=unnamed
+set clipboard+=ideaput
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase   
+set visualbell
+set t_vb=
+set scrolloff=5
+set relativenumber
+set number
+" <leader> is mapped to space
+let mapleader = " "
+nnoremap <Space> <Nop>
+" Use <leader>e to toggle type hlsearch
+
+nnoremap <leader>e :set hlsearch!<CR>
+   
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>nf :action SearchEverywhere<CR>
+nnoremap <leader>ns :action FileStructurePopup<CR>
+nnoremap <leader>nd :action GotoDeclaration<CR>
+nnoremap <leader>nr :action FindUsages<CR>
+nnoremap <leader>ni :action GotoImplementation<CR>
+nnoremap <leader>fr :action RecentFiles<CR>
+nnoremap <leader>fe :action ActivateProjectToolWindow<CR>
+nnoremap <leader>ra :action ShowIntentionActions<CR>
+nnoremap <leader>cf :action ReformatCode<CR>
+nnoremap <leader>ce :action ActivateProblemsViewToolWindow<CR>
+nnoremap <leader>re :action ExtractInterface<CR>
+nnoremap <leader>rm :action Move<CR>
