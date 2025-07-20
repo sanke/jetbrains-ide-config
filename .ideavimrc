@@ -34,6 +34,7 @@ nnoremap <leader>ns :action FileStructurePopup<CR>
 nnoremap <leader>nd :action GotoDeclaration<CR>
 nnoremap <leader>nr :action FindUsages<CR>
 nnoremap <leader>ni :action GotoImplementation<CR>
+nmap <leader><leader> :action FileStructurePopup<CR>
 
 " File and recent files mappings
 nnoremap <leader>fr :action RecentFiles<CR>
