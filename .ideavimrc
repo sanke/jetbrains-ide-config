@@ -3,31 +3,42 @@ set clipboard+=ideaput
 set hlsearch
 set incsearch
 set ignorecase
-set smartcase   
+set smartcase
 set visualbell
 set t_vb=
 set scrolloff=5
 set relativenumber
 set number
-" <leader> is mapped to space
+
+" Leader key configuration
 let mapleader = " "
 nnoremap <Space> <Nop>
-" Use <leader>e to toggle type hlsearch
 
+" Search-related mappings
 nnoremap <leader>e :set hlsearch!<CR>
-   
+
+" Window and tool window mappings
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>fe :action ActivateProjectToolWindow<CR>
+
+" Refactoring and navigation mappings
 nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>re :action ExtractInterface<CR>
+nnoremap <leader>rm :action Move<CR>
+nnoremap <leader>ra :action ShowIntentionActions<CR>
+
+" Navigation and search mappings
 nnoremap <leader>nf :action SearchEverywhere<CR>
 nnoremap <leader>ns :action FileStructurePopup<CR>
 nnoremap <leader>nd :action GotoDeclaration<CR>
 nnoremap <leader>nr :action FindUsages<CR>
 nnoremap <leader>ni :action GotoImplementation<CR>
+
+" File and recent files mappings
 nnoremap <leader>fr :action RecentFiles<CR>
-nnoremap <leader>fe :action ActivateProjectToolWindow<CR>
-nnoremap <leader>ra :action ShowIntentionActions<CR>
+
+" Code actions and formatting mappings
 nnoremap <leader>cf :action ReformatCode<CR>
-nnoremap <leader>ce :action ActivateProblemsViewToolWindow<CR>
-nnoremap <leader>re :action ExtractInterface<CR>
-nnoremap <leader>rm :action Move<CR>
+nnoremap <leader>cd :action Rider.ProblemsView.ErrorsInSolution<CR>
+
