@@ -22,7 +22,7 @@ nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>fe :action ActivateProjectToolWindow<CR>
 
 " Refactoring and navigation mappings
-vnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>rn :action RenameElement<CR>
 nnoremap <leader>re :action ExtractInterface<CR>
 nnoremap <leader>rm :action Move<CR>
@@ -30,11 +30,10 @@ nnoremap <leader>ra :action ShowIntentionActions<CR>
 vnoremap <leader>ra :action ShowIntentionActions<CR>
 nnoremap <leader>ri :action ImplementMethods<CR>
 nnoremap <leader>rs :action ChangeSignature<CR>
-nnoremap <leader><leader> :action FileStructurePopup<CR>
 
 " Navigation and search mappings
 nnoremap <leader>nf :action SearchEverywhere<CR>
-nnoremap <leader>nm :action FileStructurePopup<CR>
+nnoremap <leader><leader> :action FileStructurePopup<CR>
 nnoremap <leader>nd :action GotoDeclaration<CR>
 nnoremap <leader>nr :action FindUsages<CR>
 nnoremap <leader>ni :action GotoImplementation<CR>
