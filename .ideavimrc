@@ -10,6 +10,12 @@ set scrolloff=5
 set relativenumber
 set number
 
+" Scroll 10 lines down/up
+nnoremap <C-j> 10j
+nnoremap <C-k> 10k
+vnoremap <C-j> 10j
+vnoremap <C-k> 10k
+
 " Leader key configuration
 let mapleader = " "
 nnoremap <Space> <Nop>
