@@ -40,14 +40,21 @@ nnoremap <leader>rs :action ChangeSignature<CR>
 " Navigation and search mappings
 nnoremap <leader>nf :action SearchEverywhere<CR>
 nnoremap <leader><leader> :action FileStructurePopup<CR>
-nnoremap <leader>nd :action GotoDeclaration<CR>
-nnoremap <leader>nr :action FindUsages<CR>
-nnoremap <leader>ni :action GotoImplementation<CR>
+nnoremap gr :action FindUsages<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gs :action ChangesView.EditSource<CR>
+nnoremap gu :action GotoSuperMethod<CR>
+
+nnoremap <leader>cr :action CopyReference<CR>
 
 " File and recent files mappings
 nnoremap <leader>fr :action RecentFiles<CR>
+nnoremap <leader>fa :action SelectInProjectView<CR>
+nnoremap <leader>fo :action Diff.OpenInEditor<CR>
 
 " Code actions and formatting mappings
+nnoremap <leader>bb :action BuildCurrentProject<CR>
+nnoremap <leader>br :action RebuildCurrentProject<CR>
 nnoremap <leader>cf :action ReformatCode<CR>
 nnoremap <leader>cd :action Rider.ProblemsView.ErrorsInSolution<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
