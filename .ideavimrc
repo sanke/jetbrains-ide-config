@@ -58,3 +58,6 @@ nnoremap <leader>br :action RebuildCurrentProject<CR>
 nnoremap <leader>cf :action ReformatCode<CR>
 nnoremap <leader>cd :action Rider.ProblemsView.ErrorsInSolution<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
+nnoremap <leader>yp :action CopyAbsolutePath<CR>
+nnoremap <leader>yn :action CopyFileName<CR>
+nnoremap <leader>yn :action CopyPathFromRepositoryRootProvider<CR>
