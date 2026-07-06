@@ -16,6 +16,21 @@ nnoremap <C-k> 10k
 vnoremap <C-j> 10j
 vnoremap <C-k> 10k
 
+" Fix annoying delete and clipboard behavior
+"nnoremap x "_x
+"vnoremap x "_x
+"nnoremap X "_X
+"vnoremap X "_X
+"nnoremap d "_d
+"nnoremap D "_D
+"vnoremap d "_d
+"vnoremap D "_D
+"nnoremap c "_c
+"vnoremap c "_c
+"nnoremap C "_C
+"vnoremap C "_C
+
+
 " Leader key configuration
 let mapleader = " "
 nnoremap <Space> <Nop>
