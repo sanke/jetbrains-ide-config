@@ -9,12 +9,8 @@ set t_vb=
 set scrolloff=5
 set relativenumber
 set number
-
-" Scroll 10 lines down/up
-nnoremap <C-j> 10j
-nnoremap <C-k> 10k
-vnoremap <C-j> 10j
-vnoremap <C-k> 10k
+set which-key
+let g:WhichKey_ShowVimActions = "true"
 
 " Fix annoying delete and clipboard behavior
 "nnoremap x "_x
@@ -30,6 +26,11 @@ vnoremap <C-k> 10k
 "nnoremap C "_C
 "vnoremap C "_C
 
+" Scroll 10 lines down/up
+nnoremap <C-j> 10j
+nnoremap <C-k> 10k
+vnoremap <C-j> 10j
+vnoremap <C-k> 10k
 
 " Leader key configuration
 let mapleader = " "
@@ -60,12 +61,13 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap gs :action ChangesView.EditSource<CR>
 nnoremap gu :action GotoSuperMethod<CR>
 
-nnoremap <leader>cr :action CopyReference<CR>
 
 " File and recent files mappings
 nnoremap <leader>fr :action RecentFiles<CR>
+
 nnoremap <leader>fa :action SelectInProjectView<CR>
 nnoremap <leader>fo :action Diff.OpenInEditor<CR>
+nnoremap <leader>fc :action Compare.SameVersion<CR>
 
 " Code actions and formatting mappings
 nnoremap <leader>bb :action BuildCurrentProject<CR>
@@ -75,4 +77,5 @@ nnoremap <leader>cd :action Rider.ProblemsView.ErrorsInSolution<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
 nnoremap <leader>yp :action CopyAbsolutePath<CR>
 nnoremap <leader>yn :action CopyFileName<CR>
-nnoremap <leader>yr :action CopyPathFromRepositoryRootProvider<CR>
+nnoremap <leader>yn :action CopyPathFromRepositoryRootProvider<CR>
+nnoremap <leader>yr :action CopyReference<CR>
