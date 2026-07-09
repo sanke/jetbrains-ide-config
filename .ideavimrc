@@ -1,5 +1,7 @@
-set clipboard+=unnamed
-set clipboard+=ideaput
+set clipboard=
+"set clipboard+=unnamedplus
+"set clipboard+=ideaput
+
 set hlsearch
 set incsearch
 set ignorecase
@@ -39,6 +41,16 @@ nnoremap <Space> <Nop>
 " Search-related mappings
 nnoremap <leader>e :set hlsearch!<CR>
 
+" Clipboard mappings (system clipboard)
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+nnoremap <leader>pp "+p
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+vnoremap <leader>y "+y
+nnoremap <leader>yy "+yy
+
 " Window and tool window mappings
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>fe :action ActivateProjectToolWindow<CR>
@@ -65,9 +77,12 @@ nnoremap gu :action GotoSuperMethod<CR>
 " File and recent files mappings
 nnoremap <leader>fr :action RecentFiles<CR>
 
-nnoremap <leader>fa :action SelectInProjectView<CR>
+nnoremap <leader>fv :action SelectInProjectView<CR>
 nnoremap <leader>fo :action Diff.OpenInEditor<CR>
 nnoremap <leader>fc :action Compare.SameVersion<CR>
+nnoremap <leader>fp :action CopyAbsolutePath<CR>
+nnoremap <leader>fn :action CopyFileName<CR>
+nnoremap <leader>fR :action CopyReference<CR>
 
 " Code actions and formatting mappings
 nnoremap <leader>bb :action BuildCurrentProject<CR>
@@ -75,7 +90,3 @@ nnoremap <leader>br :action RebuildCurrentProject<CR>
 nnoremap <leader>cf :action ReformatCode<CR>
 nnoremap <leader>cd :action Rider.ProblemsView.ErrorsInSolution<CR>
 nnoremap <leader>cp :action ParameterInfo<CR>
-nnoremap <leader>yp :action CopyAbsolutePath<CR>
-nnoremap <leader>yn :action CopyFileName<CR>
-nnoremap <leader>yn :action CopyPathFromRepositoryRootProvider<CR>
-nnoremap <leader>yr :action CopyReference<CR>
